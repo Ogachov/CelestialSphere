@@ -34,7 +34,7 @@ class Converter:
                 spectrum = spectrum[0]
 
             if magnitude < self.threshold:
-                text = f"{{{hipId}, new Info({RAdeg}, {DEdeg}, {magnitude}, '{spectrum}')}},\n"
+                text = f"{{{hipId}, new Info({RAdeg}f, {DEdeg}f, {magnitude}f, '{spectrum}')}},\n"
                 print(text)
                 f.write(text)
 
